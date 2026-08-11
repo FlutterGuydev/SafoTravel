@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Safo Travel — Travel Agency</title>
+<meta name="description" content="Safo Travel — a travel agency offering domestic tours across Uzbekistan: Chimgan-Charvak, Samarkand-Bukhara, Khiva, Fergana Valley, Termez and Tashkent." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#hero" class="logo" aria-label="Safo Travel">
+      <img class="logo-icon" src="assets/images/logo-icon.png" width="69" height="28" alt="" aria-hidden="true">
+      <span class="logo-text">Safo Travel</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#tours" data-i18n="nav.tours">Tours</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#destinations" data-i18n="nav.destinations">Destinations</a>
+      <a href="#about" data-i18n="nav.about">About us</a>
+      <a href="#branches" data-i18n="nav.branches">Branches</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a class="nav-call-mobile" href="tel:+998773690009">
+        <span data-i18n="nav.callNow">Call now</span>
+      </a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="uz">UZ</button>
+        <button type="button" class="lang-btn" data-lang="ru">RU</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a class="btn btn-phone" href="tel:+998773690009">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8C8.1 13.7 10.3 15.9 13.2 17.4L15.4 15.2C15.7 14.9 16.1 14.8 16.5 15C17.9 15.5 19.4 15.8 21 15.8C21.6 15.8 22 16.2 22 16.8V20.5C22 21.1 21.6 21.5 21 21.5C10.5 21.5 2.5 13.5 2.5 3C2.5 2.4 2.9 2 3.5 2H7.2C7.8 2 8.2 2.4 8.2 3C8.2 4.6 8.5 6.1 9 7.5C9.1 7.9 9 8.3 8.7 8.6L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span>+998 77 369 00 09</span>
+      </a>
+      <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Floating call button -->
+<a href="tel:+998773690009" class="floating-call" aria-label="Call Safo Travel">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8C8.1 13.7 10.3 15.9 13.2 17.4L15.4 15.2C15.7 14.9 16.1 14.8 16.5 15C17.9 15.5 19.4 15.8 21 15.8C21.6 15.8 22 16.2 22 16.8V20.5C22 21.1 21.6 21.5 21 21.5C10.5 21.5 2.5 13.5 2.5 3C2.5 2.4 2.9 2 3.5 2H7.2C7.8 2 8.2 2.4 8.2 3C8.2 4.6 8.5 6.1 9 7.5C9.1 7.9 9 8.3 8.7 8.6L6.6 10.8Z" fill="currentColor"/></svg>
+</a>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide is-active" data-slide="amirsoy">
+      <div class="hero-illustration illustration-amirsoy" aria-hidden="true"></div>
+      <div class="hero-slide-label" data-i18n="hero.slide.amirsoy">Amirsoy</div>
+    </div>
+    <div class="hero-slide" data-slide="charvak">
+      <div class="hero-illustration illustration-charvak" aria-hidden="true"></div>
+      <div class="hero-slide-label" data-i18n="hero.slide.charvak">Charvak</div>
+    </div>
+    <div class="hero-slide" data-slide="jade">
+      <div class="hero-illustration illustration-jade" aria-hidden="true"></div>
+      <div class="hero-slide-label" data-i18n="hero.slide.jade">Nefrit ko'li</div>
+    </div>
+    <div class="hero-slide" data-slide="chimgan">
+      <div class="hero-illustration illustration-chimgan" aria-hidden="true"></div>
+      <div class="hero-slide-label" data-i18n="hero.slide.chimgan">Chimgan vodiysi</div>
+    </div>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <h1 data-i18n="hero.title">Uzbekistonni kashf eting — Safo Travel bilan</h1>
+    <p data-i18n="hero.desc">Tashkentdan Xivagacha, tog'lardan cho'llargacha — sizga mos sayohatni biz tashkil qilamiz.</p>
+    <div class="hero-buttons">
+      <a href="#tours" class="btn btn-primary" data-i18n="hero.cta1">Qaynoq turlarni ko'rish</a>
+      <button type="button" class="btn btn-glass book-btn" data-tour="Free consultation" data-price="" data-i18n="hero.cta2">Bepul konsultatsiya</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <span class="stat-num">12+</span>
+        <span class="stat-label" data-i18n="hero.statYears">yillik tajriba</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">24 000+</span>
+        <span class="stat-label" data-i18n="hero.statClients">mamnun mijozlar</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">6</span>
+        <span class="stat-label" data-i18n="hero.statDestinations">yo'nalishlar</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slides">
+    <button class="hero-dot is-active" data-index="0" aria-label="Amirsoy"></button>
+    <button class="hero-dot" data-index="1" aria-label="Charvak"></button>
+    <button class="hero-dot" data-index="2" aria-label="Jade Lake"></button>
+    <button class="hero-dot" data-index="3" aria-label="Chimgan"></button>
+  </div>
+</section>
+
+<!-- ===================== HOT TOURS MARQUEE ===================== -->
+<section class="marquee-section" id="tours">
+  <div class="marquee-track">
+    <div class="marquee-content" id="marqueeContent">
+      <!-- duplicated in JS for seamless loop; base items below -->
+      <span class="marquee-item"><strong>Toshkent</strong> <span data-i18n="marquee.from">dan</span> $35</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item"><strong>Samarqand–Buxoro</strong> <span data-i18n="marquee.from">dan</span> $120</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item"><strong>Xiva</strong> <span data-i18n="marquee.from">dan</span> $95</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item"><strong>Farg'ona vodiysi</strong> <span data-i18n="marquee.from">dan</span> $80</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item"><strong>Chimgan–Chorvoq</strong> <span data-i18n="marquee.from">dan</span> $45</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item"><strong>Termiz</strong> <span data-i18n="marquee.from">dan</span> $70</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">🇹🇷 <strong>Istanbul</strong> <span data-i18n="marquee.from">dan</span> $480</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item">🇨🇳 <strong>Shanxay</strong> <span data-i18n="marquee.from">dan</span> $890</span>
+      <span class="marquee-sep">•</span>
+      <span class="marquee-item marquee-soon">✈️ <span data-i18n="marquee.intl">Yana ko'proq mamlakatlar — tez orada</span></span>
+      <span class="marquee-sep">•</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow" data-i18n="services.eyebrow">Xizmatlar</span>
+      <h2 data-i18n="services.title">Sayohatingiz uchun to'liq xizmat</h2>
+    </div>
+    <div class="grid services-grid">
+      <div class="glass-card service-card">
+        <div class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M10.5 15.5L3 12.8C2.4 12.6 2.4 11.7 3 11.5L20 5.3C20.7 5 21.4 5.7 21.1 6.4L15 21.5C14.7 22.2 13.8 22.1 13.6 21.4L11.5 15.9C11.4 15.7 11.2 15.6 10.9 15.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 data-i18n="services.flights.title">Aviachiptalar</h3>
+        <p data-i18n="services.flights.desc">Dunyoning istalgan nuqtasiga eng qulay narxlarda chiptalar bron qilamiz.</p>
+      </div>
+      <div class="glass-card service-card">
+        <div class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M3 21V10L12 3L21 10V21H14V14H10V21H3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 data-i18n="services.stay.title">Turar joy</h3>
+        <p data-i18n="services.stay.desc">Mehmonxona va gostevoy uylardan sizga mos variantni tanlab beramiz.</p>
+      </div>
+      <div class="glass-card service-card">
+        <div class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 3L20 6.5V11C20 16 16.4 19.7 12 21C7.6 19.7 4 16 4 11V6.5L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12L11 14L15 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 data-i18n="services.visa.title">Viza yordami</h3>
+        <p data-i18n="services.visa.desc">Hujjatlarni tayyorlashdan elchixonaga topshirishgacha to'liq qo'llab-quvvatlash.</p>
+      </div>
+      <div class="glass-card service-card">
+        <div class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 21C16 17.5 19 14 19 9.5C19 5.9 16.1 3 12.5 3H11.5C7.9 3 5 5.9 5 9.5C5 14 8 17.5 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 8V13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="16" r="0.9" fill="currentColor"/></svg>
+        </div>
+        <h3 data-i18n="services.insurance.title">Sayohat sug'urtasi</h3>
+        <p data-i18n="services.insurance.desc">Sayohatingiz davomida to'liq xotirjamlik uchun sug'urta polislari.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DESTINATIONS ===================== -->
+<section class="section" id="destinations">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow" data-i18n="destinations.eyebrow">Ichki turizm</span>
+      <h2 data-i18n="destinations.title">O'zbekiston bo'ylab yo'nalishlar</h2>
+    </div>
+  </div>
+  <div class="scroll-row-wrap">
+    <div class="scroll-row" id="destinationsRow">
+      <article class="glass-card dest-card">
+        <div class="dest-card-image dest-image-khiva" aria-hidden="true"></div>
+        <div class="dest-card-body">
+          <span class="dest-region" data-i18n="destinations.khiva.region">Xorazm</span>
+          <h3 data-i18n="destinations.khiva.title">Xiva</h3>
+          <p data-i18n="destinations.khiva.desc">Ichan-Qal'a — ochiq osmon ostidagi muzey-shahar, minglab yillik tarix.</p>
+          <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $95</div>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Khiva" data-price="$95">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </article>
+      <article class="glass-card dest-card">
+        <div class="dest-card-image dest-image-tashkent" aria-hidden="true"></div>
+        <div class="dest-card-body">
+          <span class="dest-region" data-i18n="destinations.tashkent.region">Toshkent</span>
+          <h3 data-i18n="destinations.tashkent.title">Toshkent</h3>
+          <p data-i18n="destinations.tashkent.desc">Zamonaviy poytaxt, metro stansiyalari, milliy taomlar va bozorlar.</p>
+          <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $35</div>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Tashkent" data-price="$35">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </article>
+      <article class="glass-card dest-card">
+        <div class="dest-card-image dest-image-fergana" aria-hidden="true"></div>
+        <div class="dest-card-body">
+          <span class="dest-region" data-i18n="destinations.fergana.region">Farg'ona vodiysi</span>
+          <h3 data-i18n="destinations.fergana.title">Farg'ona vodiysi</h3>
+          <p data-i18n="destinations.fergana.desc">Hunarmandchilik shaharchalari, ipakchilik korxonalari va bog'lar.</p>
+          <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $80</div>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Fergana Valley" data-price="$80">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </article>
+      <article class="glass-card dest-card">
+        <div class="dest-card-image dest-image-termez" aria-hidden="true"></div>
+        <div class="dest-card-body">
+          <span class="dest-region" data-i18n="destinations.termez.region">Surxondaryo</span>
+          <h3 data-i18n="destinations.termez.title">Termiz</h3>
+          <p data-i18n="destinations.termez.desc">Buddaviylik yodgorliklari va qadimiy Baqtriya izlari.</p>
+          <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $70</div>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Termez" data-price="$70">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </article>
+      <article class="glass-card dest-card">
+        <div class="dest-card-image dest-image-chimgan" aria-hidden="true"></div>
+        <div class="dest-card-body">
+          <span class="dest-region" data-i18n="destinations.chimgan.region">Toshkent viloyati</span>
+          <h3 data-i18n="destinations.chimgan.title">Chimgan–Chorvoq</h3>
+          <p data-i18n="destinations.chimgan.desc">Tog'lar, kanatli yo'l va zumrad rangli suv omborining manzarasi.</p>
+          <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $45</div>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Chimgan-Charvak" data-price="$45">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </article>
+      <article class="glass-card dest-card">
+        <div class="dest-card-image dest-image-samarkand" aria-hidden="true"></div>
+        <div class="dest-card-body">
+          <span class="dest-region" data-i18n="destinations.samarkand.region">Samarqand–Buxoro</span>
+          <h3 data-i18n="destinations.samarkand.title">Samarqand–Buxoro</h3>
+          <p data-i18n="destinations.samarkand.desc">Registon maydoni, Amir Temur maqbarasi va qadimiy Buxoro ko'chalari.</p>
+          <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $120</div>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Samarkand-Bukhara" data-price="$120">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </article>
+      <article class="glass-card dest-card dest-card-soon">
+        <div class="globe-anim" aria-hidden="true">
+          <svg class="globe-svg" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="46" stroke="currentColor" stroke-width="2" fill="none" opacity="0.5"/>
+            <ellipse cx="60" cy="60" rx="46" ry="18" stroke="currentColor" stroke-width="1.4" fill="none" opacity="0.4"/>
+            <ellipse cx="60" cy="60" rx="18" ry="46" stroke="currentColor" stroke-width="1.4" fill="none" opacity="0.4"/>
+            <line x1="14" y1="60" x2="106" y2="60" stroke="currentColor" stroke-width="1.4" opacity="0.4"/>
+          </svg>
+          <svg class="plane-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M2 12L22 12M15 5L22 12L15 19M9 8L4 12L9 16" stroke="#C68A34" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="badge-soon" data-i18n="soon.badge">Tez orada</span>
+        <h3 data-i18n="soon.title">Xalqaro turizm</h3>
+        <p data-i18n="soon.desc">Tez orada dunyo bo'ylab yo'nalishlarni ham taklif qilamiz. Kuzatib boring!</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="container destinations-detail">
+    <div class="section-heading">
+      <span class="eyebrow" data-i18n="chimgan.eyebrow">Tog' sayohatlari</span>
+      <h3 data-i18n="chimgan.title">Chimgan — Chorvoq</h3>
+    </div>
+    <div class="grid chimgan-grid">
+
+      <article class="glass-card chimgan-card">
+        <span class="chimgan-duration" data-i18n="chimgan.tour1.duration">1 kunlik, 08:00–20:00</span>
+        <h3 data-i18n="chimgan.tour1.name">Tyan-Shanning uch durdonasi</h3>
+        <ol class="itinerary">
+          <li><strong>08:00–10:00</strong> — <span data-i18n="chimgan.tour1.i1">Toshkentdan jo'nash, tog'larga manzarali yo'l</span></li>
+          <li><strong>10:00–12:00</strong> — <span data-i18n="chimgan.tour1.i2">Amirsoy kurorti — 2290 metrga kanatli yo'l, panorama suratlar</span></li>
+          <li><strong>12:00–13:30</strong> — <span data-i18n="chimgan.tour1.i3">Chimgan etagida sayr — otda, kvadratsiklda yoki kreslo-kanatli yo'lda</span></li>
+          <li><strong>14:00–15:30</strong> — <span data-i18n="chimgan.tour1.i4">Tog' restoranida milliy taomlardan tushlik, Chorvoq manzarasi</span></li>
+          <li><strong>15:30–17:30</strong> — <span data-i18n="chimgan.tour1.i5">Chorvoq suv ombori va Brichmulla — zumrad suv, qayiq/gidrotsikl/paraplan</span></li>
+          <li><strong>17:30–18:30</strong> — <span data-i18n="chimgan.tour1.i6">Xo'jakent — 800 yildan oshiq chinorlar va qadimiy petrogliflar</span></li>
+          <li><strong>18:30–20:00</strong> — <span data-i18n="chimgan.tour1.i7">Toshkentga qaytish</span></li>
+        </ol>
+        <button type="button" class="btn btn-accent book-btn" data-tour="Three Pearls of the Tian Shan" data-price="">
+          <span data-i18n="destinations.book">Bron qilish</span>
+        </button>
+      </article>
+
+      <article class="glass-card chimgan-card">
+        <span class="chimgan-duration" data-i18n="chimgan.tour2.duration">Faollar uchun, guruh sayohati</span>
+        <h3 data-i18n="chimgan.tour2.name">Treking va kanyonlar</h3>
+        <ol class="itinerary">
+          <li><strong data-i18n="chimgan.tour2.routeA">A yo'nalish (may–sentyabr)</strong> — <span data-i18n="chimgan.tour2.i1">Gulkam darasi — Qumli dovondan oshib, Gulkam jarligiga tushish, kanyon va sharsharalar (instruktor bilan), daryo bo'yida piknik</span></li>
+          <li><strong data-i18n="chimgan.tour2.routeB">B yo'nalish</strong> — <span data-i18n="chimgan.tour2.i2">Kichik Chimgan (2090 m) yoki Qumli dovonga chiqish, Marmar soyiga tushish (qazilma qidirish), Chorvoqda dam olish</span></li>
+        </ol>
+        <button type="button" class="btn btn-accent book-btn" data-tour="Trekking and canyons" data-price="">
+          <span data-i18n="destinations.book">Bron qilish</span>
+        </button>
+      </article>
+
+      <article class="glass-card chimgan-card">
+        <span class="chimgan-duration" data-i18n="chimgan.tour3.duration">2 kun / 1 tun, VIP dam olish kuni</span>
+        <h3 data-i18n="chimgan.tour3.name">Tog' reset</h3>
+        <ol class="itinerary">
+          <li><strong data-i18n="chimgan.tour3.day1">1-kun</strong> — <span data-i18n="chimgan.tour3.i1">Toshkentdan ertalabki transfer, Amirsoy va Chimgan etagiga tashrif, ekstremal faoliyat (Chorvoq ustida paraplan yoki tog' yo'llarida baggi/kvadratsikl safari), Chorvoq bo'yi yoki Brichmulla/Bog'iston mehmonxonasida tunash, ayvonda kechki ovqat va gulxan kechasi</span></li>
+          <li><strong data-i18n="chimgan.tour3.day2">2-kun</strong> — <span data-i18n="chimgan.tour3.i2">Manzarali nonushta, suv faoliyati (qayiqda sayr, SUP taxta, plyaj), tog' asalarichiligiga tashrif (asal tatib ko'rish), ko'rinish nuqtalarida to'xtash (tog' o'tlari, qurt, shirinliklar sotib olish), kechqurun Toshkentga qaytish</span></li>
+        </ol>
+        <p class="chimgan-note" data-i18n="chimgan.tour3.note">Fasllarga moslashadi: qishda Amirsoy-Chimganda chang'i/tyubing/kanatli yo'llar; yozda Chorvoqda suv faoliyati, kanyonlar, soyabonli choyxonalar; kuzda foto-turlar va treking.</p>
+        <button type="button" class="btn btn-accent book-btn" data-tour="Mountain reset (2 days / 1 night)" data-price="">
+          <span data-i18n="destinations.book">Bron qilish</span>
+        </button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TOUR PACKAGES ===================== -->
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow" data-i18n="packages.eyebrow">Tur paketlari</span>
+      <h2 data-i18n="packages.title">Sizga mos paketni tanlang</h2>
+    </div>
+    <div class="grid packages-grid">
+      <div class="glass-card package-card">
+        <div class="package-card-image package-image-standard" aria-hidden="true"></div>
+        <div class="package-card-body">
+          <h3 data-i18n="packages.standard.name">Standard</h3>
+          <p class="package-sub" data-i18n="packages.standard.sub">Samarqand–Buxoro, 3 kun</p>
+          <div class="package-price">$310</div>
+          <ul class="package-list">
+            <li data-i18n="packages.standard.f1">Qulay transport va yo'lboshchi</li>
+            <li data-i18n="packages.standard.f2">3 tunlik mehmonxona</li>
+            <li data-i18n="packages.standard.f3">Kunlik nonushta</li>
+          </ul>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Standard — Samarkand-Bukhara (3 days)" data-price="$310">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </div>
+      <div class="glass-card package-card package-popular">
+        <div class="package-card-image package-image-comfort" aria-hidden="true"></div>
+        <div class="package-card-body">
+          <span class="badge-popular" data-i18n="packages.popularBadge">Eng ommabop</span>
+          <h3 data-i18n="packages.comfort.name">Comfort</h3>
+          <p class="package-sub" data-i18n="packages.comfort.sub">Klassik Ipak Yo'li, 7 kun</p>
+          <div class="package-price">$690</div>
+          <ul class="package-list">
+            <li data-i18n="packages.comfort.f1">Toshkent — Samarqand — Buxoro — Xiva</li>
+            <li data-i18n="packages.comfort.f2">Premium mehmonxonalar</li>
+            <li data-i18n="packages.comfort.f3">Barcha kirish chiptalari</li>
+          </ul>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Comfort — Classic Silk Road (7 days)" data-price="$690">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </div>
+      <div class="glass-card package-card package-featured">
+        <span class="badge-new" data-i18n="packages.newBadge">Yangi</span>
+        <div class="package-card-image package-image-uzungol" aria-hidden="true"></div>
+        <div class="package-card-body">
+          <h3 data-i18n="packages.turkeyCombo.name">Istanbul + Uzungo'l</h3>
+          <p class="package-sub" data-i18n="packages.turkeyCombo.sub">Istanbul + Uzungo'l, 6 kun</p>
+          <div class="package-price">$780</div>
+          <ul class="package-list">
+            <li data-i18n="packages.turkeyCombo.f1">Istanbul shahar sayohati va Bosfor bo'ylab kruiz</li>
+            <li data-i18n="packages.turkeyCombo.f2">Uzungo'l tog' bungalovida 2 kecha (nonushta bilan)</li>
+            <li data-i18n="packages.turkeyCombo.f3">Barcha transferlar va yo'lboshchi xizmati</li>
+          </ul>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Turkey — Istanbul + Uzungol (6 days)" data-price="$780">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </div>
+      <div class="glass-card package-card">
+        <div class="package-card-image package-image-istanbul" aria-hidden="true"></div>
+        <div class="package-card-body">
+          <h3 data-i18n="packages.turkeyWeekend.name">Istanbul Weekend</h3>
+          <p class="package-sub" data-i18n="packages.turkeyWeekend.sub">Istanbul, 4 kun</p>
+          <div class="package-price">$480</div>
+          <ul class="package-list">
+            <li data-i18n="packages.turkeyWeekend.f1">Sultonahmet, Ko'k Masjid va Ayasofiya ekskursiyasi</li>
+            <li data-i18n="packages.turkeyWeekend.f2">4* mehmonxona, kunlik nonushta</li>
+            <li data-i18n="packages.turkeyWeekend.f3">Aeroportdan mehmonxonagacha transfer</li>
+          </ul>
+          <button type="button" class="btn btn-accent book-btn" data-tour="Turkey — Istanbul Weekend (4 days)" data-price="$480">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </div>
+      <div class="glass-card package-card">
+        <div class="package-card-image package-image-shanghai" aria-hidden="true"></div>
+        <div class="package-card-body">
+          <h3 data-i18n="packages.china.name">Shanxay</h3>
+          <p class="package-sub" data-i18n="packages.china.sub">Shanxay, 5 kun</p>
+          <div class="package-price">$890</div>
+          <ul class="package-list">
+            <li data-i18n="packages.china.f1">Hampton by Hilton mehmonxonasida turar joy, nonushta bilan</li>
+            <li data-i18n="packages.china.f2">Shahar bo'ylab ekskursiya va yo'lboshchi</li>
+            <li data-i18n="packages.china.f3">Aeroport transferi ikki tomonlama</li>
+          </ul>
+          <button type="button" class="btn btn-accent book-btn" data-tour="China — Shanghai (5 days)" data-price="$890">
+            <span data-i18n="destinations.book">Bron qilish</span>
+          </button>
+        </div>
+      </div>
+      <div class="glass-card package-card package-soon">
+        <div class="globe-anim" aria-hidden="true">
+          <svg class="globe-svg" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="46" stroke="currentColor" stroke-width="2" fill="none" opacity="0.5"/>
+            <ellipse cx="60" cy="60" rx="46" ry="18" stroke="currentColor" stroke-width="1.4" fill="none" opacity="0.4"/>
+            <ellipse cx="60" cy="60" rx="18" ry="46" stroke="currentColor" stroke-width="1.4" fill="none" opacity="0.4"/>
+            <line x1="14" y1="60" x2="106" y2="60" stroke="currentColor" stroke-width="1.4" opacity="0.4"/>
+          </svg>
+          <svg class="plane-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M2 12L22 12M15 5L22 12L15 19M9 8L4 12L9 16" stroke="#C68A34" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="badge-soon" data-i18n="soon.badge">Tez orada</span>
+        <h3 data-i18n="soon.title">Xalqaro turlar</h3>
+        <p data-i18n="soon.desc">Tez orada dunyo bo'ylab yo'nalishlarni ham taklif qilamiz. Kuzatib boring!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT US ===================== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow" data-i18n="about.eyebrow">Biz haqimizda</span>
+      <h2 data-i18n="about.title">"Muslima Ziyo" xususiy korxonasi</h2>
+    </div>
+    <div class="about-grid">
+      <figure class="about-cert glass-card">
+        <img src="assets/images/certificate.png" alt="Davlat ro'yxatidan o'tganlik guvohnomasi" loading="lazy" />
+        <figcaption data-i18n="about.certCaption">Davlat ro'yxatidan o'tganlik guvohnomasi</figcaption>
+      </figure>
+      <div class="about-content glass-card">
+        <p data-i18n="about.desc">2007-yildan buyon faoliyat yurituvchi "Muslima Ziyo" XK — Navoiy viloyatida rasmiy ro'yxatdan o'tgan kompaniya. Safo Travel nomi ostida O'zbekiston bo'ylab sayohatlarni tashkil qilamiz va har bir mijozga individual yondashuvni ta'minlaymiz.</p>
+        <ul class="about-facts">
+          <li><span data-i18n="about.labelRegistered">Ro'yxatdan o'tgan sana</span><strong>07.11.2007</strong></li>
+          <li><span data-i18n="about.labelTaxId">STIR</span><strong>300 611 497</strong></li>
+          <li><span data-i18n="about.labelLegalForm">Tashkiliy-huquqiy shakli</span><strong data-i18n="about.valueLegalForm">Xususiy korxona</strong></li>
+          <li><span data-i18n="about.labelAddress">Manzil</span><strong data-i18n="about.addressValue">Navoiy viloyati, Navoiy shahri, Me'mor MFY, Me'morlar ko'chasi, 16-G uy</strong></li>
+          <li><span data-i18n="about.labelDirector">Rahbar</span><strong>Разжаловать Ш.Х</strong></li>
+          <li><span data-i18n="about.labelPhone">Telefon</span><strong><a href="tel:+998773690009">+998 77 369 00 09</a>, <a href="tel:+998906183614">+998 90 618 36 14</a></strong></li>
+        </ul>
+        <a class="about-map-link" href="https://www.google.com/maps?q=40.115944,65.376194" target="_blank" rel="noopener" data-i18n="about.labelMap">Xaritada ko'rish</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BRANCHES ===================== -->
+<section class="section section-tint" id="branches">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow" data-i18n="branches.eyebrow">Filiallar</span>
+      <h2 data-i18n="branches.title">Bizni qayerdan topish mumkin</h2>
+    </div>
+    <div class="grid branches-grid branches-grid-single">
+      <div class="glass-card branch-card">
+        <h3 data-i18n="branches.hq.name">Bosh ofis (Navoiy)</h3>
+        <p data-i18n="branches.hq.address">Navoiy viloyati, Navoiy shahri, Me'mor MFY, Me'morlar ko'chasi, 16-G uy</p>
+        <a href="tel:+998773690009">+998 77 369 00 09</a>
+        <a href="tel:+998906183614">+998 90 618 36 14</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="section cta-section" id="contact">
+  <div class="container cta-inner glass-card">
+    <h2 data-i18n="cta.title">Keyingi sayohatingizni bugun rejalashtiring</h2>
+    <p data-i18n="cta.desc">Mutaxassislarimiz sizga eng mos yo'nalish va narxni tanlab beradi.</p>
+    <div class="cta-buttons">
+      <a href="tel:+998773690009" class="btn btn-primary">
+        <span data-i18n="cta.call">Qo'ng'iroq qilish</span>
+      </a>
+      <a href="https://t.me/ipakyoli_agency" target="_blank" rel="noopener" class="btn btn-glass">
+        <span data-i18n="cta.telegram">Telegram orqali yozish</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#hero" class="logo">
+        <img class="logo-icon" src="assets/images/logo-icon.png" width="62" height="25" alt="" aria-hidden="true">
+        <span class="logo-text">Safo Travel</span>
+      </a>
+      <p data-i18n="footer.tagline">O'zbekiston bo'ylab unutilmas sayohatlar.</p>
+    </div>
+    <div class="footer-links">
+      <h4 data-i18n="footer.linksTitle">Sahifalar</h4>
+      <a href="#tours" data-i18n="nav.tours">Tours</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#destinations" data-i18n="nav.destinations">Destinations</a>
+      <a href="#about" data-i18n="nav.about">About us</a>
+      <a href="#branches" data-i18n="nav.branches">Branches</a>
+    </div>
+    <div class="footer-contact">
+      <h4 data-i18n="footer.contactTitle">Aloqa</h4>
+      <a href="tel:+998773690009">+998 77 369 00 09</a>
+      <a href="tel:+998906183614">+998 90 618 36 14</a>
+      <a href="mailto:info@ipakyoli-travel.uz">info@ipakyoli-travel.uz</a>
+    </div>
+    <div class="footer-social">
+      <h4 data-i18n="footer.socialTitle">Ijtimoiy tarmoqlar</h4>
+      <div class="social-icons">
+        <a href="https://t.me/ipakyoli_agency" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 4L2.5 11.3C1.9 11.5 1.9 12.4 2.5 12.6L7.5 14.3L9.5 20.5C9.7 21.1 10.5 21.2 10.8 20.7L13.3 17.3L18.2 21C18.7 21.4 19.4 21.1 19.5 20.5L22 5C22.1 4.4 21.6 3.8 21 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M7.5 14.3L17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 21V13H17L17.5 9.5H14V7.5C14 6.5 14.3 5.8 15.7 5.8H17.6V2.6C17.3 2.6 16.2 2.5 15 2.5C12.5 2.5 10.8 4 10.8 6.8V9.5H8V13H10.8V21H14Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-map-row">
+    <div class="footer-map-text">
+      <h4 data-i18n="branches.hq.name">Bosh ofis (Navoiy)</h4>
+      <p data-i18n="branches.hq.address">Navoiy viloyati, Navoiy shahri, Me'mor MFY, Me'morlar ko'chasi, 16-G uy</p>
+      <a class="footer-map-link" href="https://yandex.com/maps/?pt=65.376194,40.115944&z=17&l=map" target="_blank" rel="noopener" data-i18n="about.labelMap">Xaritada ko'rish</a>
+    </div>
+    <div class="footer-map">
+      <iframe src="https://yandex.com/map-widget/v1/?ll=65.376194%2C40.115944&z=16&pt=65.376194,40.115944,pm2rdl" width="100%" height="280" frameborder="0" loading="lazy" title="Muslima Ziyo — Navoiy manzili"></iframe>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Safo Travel. <span data-i18n="footer.rights">Barcha huquqlar himoyalangan.</span></p>
+  </div>
+</footer>
+
+<!-- ===================== BOOKING MODAL ===================== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal glass-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <h3 id="modalTitle">Bron qilish</h3>
+    <div class="modal-tour-info">
+      <span id="modalTourName">Tour name</span>
+      <span id="modalTourPrice">$0</span>
+    </div>
+    <form id="bookingForm" novalidate>
+      <label for="bookingName" data-i18n="modal.nameLabel">Ismingiz</label>
+      <input type="text" id="bookingName" name="name" required data-i18n-ph="modal.namePh" placeholder="Ismingizni kiriting" autocomplete="name" />
+
+      <label for="bookingPhone" data-i18n="modal.phoneLabel">Telefon raqamingiz</label>
+      <input type="tel" id="bookingPhone" name="phone" required data-i18n-ph="modal.phonePh" placeholder="+998 90 123 45 67" autocomplete="tel" />
+
+      <label for="bookingMessage" data-i18n="modal.messageLabel">Xabaringiz (ixtiyoriy)</label>
+      <textarea id="bookingMessage" name="message" rows="3" data-i18n-ph="modal.messagePh" placeholder="Qo'shimcha istaklaringiz"></textarea>
+
+      <div class="form-error" id="formError" role="alert" aria-live="assertive"></div>
+
+      <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+        <span data-i18n="modal.send">Yuborish</span>
+      </button>
+    </form>
+    <div class="form-success" id="formSuccess" role="status" aria-live="polite" data-i18n="modal.success">Rahmat! Tez orada siz bilan bog'lanamiz.</div>
+    <div class="modal-call">
+      <span data-i18n="modal.orCall">yoki qo'ng'iroq qiling</span>
+      <a href="tel:+998773690009">+998 77 369 00 09</a>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

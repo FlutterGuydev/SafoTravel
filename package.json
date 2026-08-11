@@ -1,0 +1,16 @@
+{
+  "name": "ipak-yoli-travel",
+  "version": "1.0.0",
+  "description": "Ipak Yo'li travel agency website with Telegram-connected booking backend",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
