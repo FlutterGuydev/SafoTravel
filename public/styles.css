@@ -300,10 +300,10 @@ button { font-family: inherit; cursor: pointer; }
   transition: transform 8s ease;
 }
 .hero-slide.is-active .hero-illustration { transform: scale(1); }
-.illustration-amirsoy { background-image: url('assets/images/hero/amirsoy.jpg'); }
-.illustration-charvak { background-image: url('assets/images/hero/charvak.jpg'); }
-.illustration-jade    { background-image: url('assets/images/hero/jade.webp'); }
-.illustration-chimgan { background-image: url('assets/images/hero/chimgan.jpg'); }
+.illustration-amirsoy { background-image: url('assets/images/hero/amirsoy-tog-kurorti.webp'); }
+.illustration-charvak { background-image: url('assets/images/hero/chorvoq-suv-ombori-dam-olish-maskani.jpg'); }
+.illustration-jade    { background-image: url('assets/images/hero/nefrit-koli-manzarasi.webp'); }
+.illustration-chimgan { background-image: url('assets/images/hero/chimgan-vodiysi-manzarasi.webp'); }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-illustration { transition: none; transform: none; }
@@ -483,11 +483,11 @@ button { font-family: inherit; cursor: pointer; }
   background-size: cover;
   background-position: center;
 }
-.dest-image-khiva     { background-image: url('assets/images/destinations/khiva.jpg'); }
-.dest-image-tashkent  { background-image: url('assets/images/destinations/tashkent.jpg'); }
-.dest-image-fergana   { background-image: url('assets/images/destinations/fergana.jpg'); }
-.dest-image-termez    { background-image: url('assets/images/destinations/termez.jpg'); }
-.dest-image-chimgan   { background-image: url('assets/images/hero/charvak.jpg'); }
+.dest-image-khiva     { background-image: url('assets/images/destinations/xiva-ichan-qala.webp'); }
+.dest-image-tashkent  { background-image: url('assets/images/destinations/toshkent-mustaqillik-bogi.webp'); }
+.dest-image-fergana   { background-image: url('assets/images/destinations/fargona-vodiysi-manzarasi.webp'); }
+.dest-image-termez    { background-image: url('assets/images/destinations/termiz-tarixiy-yodgorliklari.webp'); }
+.dest-image-chimgan   { background-image: url('assets/images/hero/chorvoq-suv-ombori-dam-olish-maskani.jpg'); }
 .dest-image-samarkand { background-image: var(--bg-gradient); }
 
 .dest-card-body {
@@ -566,10 +566,10 @@ button { font-family: inherit; cursor: pointer; }
   background-position: center;
 }
 .package-image-standard { background: var(--bg-gradient); }
-.package-image-comfort  { background-image: url('assets/images/destinations/khiva.jpg'); }
-.package-image-uzungol  { background-image: url('assets/images/international/turkey-bungalow.jpg'); }
-.package-image-istanbul { background-image: url('assets/images/international/istanbul.jpg'); }
-.package-image-shanghai { background-image: url('assets/images/international/shanghai-hotel.avif'); }
+.package-image-comfort  { background-image: url('assets/images/destinations/xiva-ichan-qala.webp'); }
+.package-image-uzungol  { background-image: url('assets/images/international/uzungol-tog-bungalovi.jpg'); }
+.package-image-istanbul { background-image: url('assets/images/international/istanbul-bosfor-manzarasi.jpg'); }
+.package-image-shanghai { background-image: url('assets/images/international/shanxay-mehmonxona-hampton-hilton.avif'); }
 
 .package-card-body { padding: 30px 28px 34px; position: relative; }
 

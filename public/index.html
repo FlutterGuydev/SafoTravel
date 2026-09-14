@@ -5,11 +5,182 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Safo Travel — Travel Agency</title>
 <meta name="description" content="Safo Travel — a travel agency offering domestic tours across Uzbekistan: Chimgan-Charvak, Samarkand-Bukhara, Khiva, Fergana Valley, Termez and Tashkent." />
+<link rel="canonical" href="https://safotravel.uz/" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Safo Travel" />
+<meta property="og:title" content="Safo Travel — Travel Agency" />
+<meta property="og:description" content="Safo Travel — a travel agency offering domestic tours across Uzbekistan: Chimgan-Charvak, Samarkand-Bukhara, Khiva, Fergana Valley, Termez and Tashkent." />
+<meta property="og:url" content="https://safotravel.uz/" />
+<meta property="og:image" content="https://safotravel.uz/assets/images/hero/amirsoy-tog-kurorti.webp" />
+<meta property="og:image:width" content="1100" />
+<meta property="og:image:height" content="733" />
+<meta property="og:image:alt" content="Amirsoy tog' kurorti qishda — Safo Travel" />
+<meta property="og:locale" content="uz_UZ" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Safo Travel — Travel Agency" />
+<meta name="twitter:description" content="Safo Travel — a travel agency offering domestic tours across Uzbekistan: Chimgan-Charvak, Samarkand-Bukhara, Khiva, Fergana Valley, Termez and Tashkent." />
+<meta name="twitter:image" content="https://safotravel.uz/assets/images/hero/amirsoy-tog-kurorti.webp" />
+
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
+
+<!-- Structured data: organization + bookable tours (schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "https://safotravel.uz/#organization",
+      "name": "Safo Travel",
+      "alternateName": "\"Muslima Ziyo\" XK",
+      "legalName": "\"MUSLIMA ZIYO\" XUSUSIY KORXONASI",
+      "url": "https://safotravel.uz/",
+      "logo": "https://safotravel.uz/assets/images/safo-travel-logotipi.webp",
+      "image": "https://safotravel.uz/assets/images/hero/amirsoy-tog-kurorti.webp",
+      "telephone": "+998773690009",
+      "email": "info@ipakyoli-travel.uz",
+      "priceRange": "$$",
+      "foundingDate": "2007-11-07",
+      "taxID": "300611497",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Me'morlar ko'chasi, 16-G uy, Me'mor MFY",
+        "addressLocality": "Navoiy",
+        "addressRegion": "Navoiy viloyati",
+        "addressCountry": "UZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.115944,
+        "longitude": 65.376194
+      },
+      "sameAs": ["https://t.me/ipakyoli_agency"],
+      "areaServed": "UZ"
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#tour-khiva",
+      "name": "Xiva turi",
+      "description": "Ichan-Qal'a — ochiq osmon ostidagi muzey-shahar, minglab yillik tarix.",
+      "touristType": "Ichki turizm",
+      "itinerary": { "@type": "City", "name": "Xiva" },
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "95", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#destinations" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#tour-tashkent",
+      "name": "Toshkent turi",
+      "description": "Zamonaviy poytaxt, metro stansiyalari, milliy taomlar va bozorlar.",
+      "touristType": "Ichki turizm",
+      "itinerary": { "@type": "City", "name": "Toshkent" },
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "35", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#destinations" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#tour-fergana",
+      "name": "Farg'ona vodiysi turi",
+      "description": "Hunarmandchilik shaharchalari, ipakchilik korxonalari va bog'lar.",
+      "touristType": "Ichki turizm",
+      "itinerary": { "@type": "City", "name": "Farg'ona vodiysi" },
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "80", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#destinations" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#tour-termez",
+      "name": "Termiz turi",
+      "description": "Buddaviylik yodgorliklari va qadimiy Baqtriya izlari.",
+      "touristType": "Ichki turizm",
+      "itinerary": { "@type": "City", "name": "Termiz" },
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "70", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#destinations" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#tour-chimgan-charvak",
+      "name": "Chimgan–Chorvoq turi",
+      "description": "Tog'lar, kanatli yo'l va zumrad rangli suv omborining manzarasi.",
+      "touristType": "Tog' turizmi",
+      "itinerary": { "@type": "Place", "name": "Chimgan–Chorvoq" },
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "45", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#destinations" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#tour-samarkand-bukhara",
+      "name": "Samarqand–Buxoro turi",
+      "description": "Registon maydoni, Amir Temur maqbarasi va qadimiy Buxoro ko'chalari.",
+      "touristType": "Ichki turizm",
+      "itinerary": [{ "@type": "City", "name": "Samarqand" }, { "@type": "City", "name": "Buxoro" }],
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "120", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#destinations" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#package-standard",
+      "name": "Standard — Samarqand-Buxoro (3 kun)",
+      "description": "Qulay transport va yo'lboshchi, 3 tunlik mehmonxona, kunlik nonushta.",
+      "touristType": "Tur paketi",
+      "itinerary": [{ "@type": "City", "name": "Samarqand" }, { "@type": "City", "name": "Buxoro" }],
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "310", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#tours" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#package-comfort",
+      "name": "Comfort — Klassik Ipak Yo'li (7 kun)",
+      "description": "Toshkent — Samarqand — Buxoro — Xiva, premium mehmonxonalar, barcha kirish chiptalari.",
+      "touristType": "Tur paketi",
+      "itinerary": [{ "@type": "City", "name": "Toshkent" }, { "@type": "City", "name": "Samarqand" }, { "@type": "City", "name": "Buxoro" }, { "@type": "City", "name": "Xiva" }],
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "690", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#tours" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#package-turkey-combo",
+      "name": "Istanbul + Uzungo'l (6 kun)",
+      "description": "Istanbul shahar sayohati va Bosfor bo'ylab kruiz, Uzungo'l tog' bungalovida 2 kecha.",
+      "touristType": "Xalqaro tur",
+      "itinerary": [{ "@type": "City", "name": "Istanbul" }, { "@type": "Place", "name": "Uzungo'l" }],
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "780", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#tours" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#package-turkey-weekend",
+      "name": "Istanbul Weekend (4 kun)",
+      "description": "Sultonahmet, Ko'k Masjid va Ayasofiya ekskursiyasi, 4* mehmonxona.",
+      "touristType": "Xalqaro tur",
+      "itinerary": { "@type": "City", "name": "Istanbul" },
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "480", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#tours" }
+    },
+    {
+      "@type": "TouristTrip",
+      "@id": "https://safotravel.uz/#package-china",
+      "name": "Shanxay (5 kun)",
+      "description": "Hampton by Hilton mehmonxonasida turar joy, shahar bo'ylab ekskursiya va yo'lboshchi.",
+      "touristType": "Xalqaro tur",
+      "itinerary": { "@type": "City", "name": "Shanxay" },
+      "provider": { "@id": "https://safotravel.uz/#organization" },
+      "offers": { "@type": "Offer", "price": "890", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://safotravel.uz/#tours" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -17,7 +188,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#hero" class="logo" aria-label="Safo Travel">
-      <img class="logo-icon" src="assets/images/logo-icon.png" width="69" height="28" alt="" aria-hidden="true">
+      <img class="logo-icon" src="assets/images/safo-travel-logotipi.webp" width="69" height="28" alt="" aria-hidden="true">
       <span class="logo-text">Safo Travel</span>
     </a>
 
@@ -191,7 +362,7 @@
         <div class="dest-card-body">
           <span class="dest-region" data-i18n="destinations.khiva.region">Xorazm</span>
           <h3 data-i18n="destinations.khiva.title">Xiva</h3>
-          <p data-i18n="destinations.khiva.desc">Ichan-Qal'a — ochiq osmon ostidagi muzey-shahar, minglab yillik tarix.</p>
+          <p data-i18n="destinations.khiva.desc">Ichan-Qal'a — ochiq osmon ostidagi muzey-shahar, minglab yillik tarix. Xorazmdagi bu qadimiy shaharga sayohat — mustaqil sayyohlar orasida eng ko'p so'raladigan yo'nalishlardan biri.</p>
           <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $95</div>
           <button type="button" class="btn btn-accent book-btn" data-tour="Khiva" data-price="$95">
             <span data-i18n="destinations.book">Bron qilish</span>
@@ -203,7 +374,7 @@
         <div class="dest-card-body">
           <span class="dest-region" data-i18n="destinations.tashkent.region">Toshkent</span>
           <h3 data-i18n="destinations.tashkent.title">Toshkent</h3>
-          <p data-i18n="destinations.tashkent.desc">Zamonaviy poytaxt, metro stansiyalari, milliy taomlar va bozorlar.</p>
+          <p data-i18n="destinations.tashkent.desc">Zamonaviy poytaxt, metro stansiyalari, milliy taomlar va bozorlar. Toshkent bo'ylab bir kunlik ekskursiya qisqa muddatli dam olish uchun qulay tanlov.</p>
           <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $35</div>
           <button type="button" class="btn btn-accent book-btn" data-tour="Tashkent" data-price="$35">
             <span data-i18n="destinations.book">Bron qilish</span>
@@ -215,7 +386,7 @@
         <div class="dest-card-body">
           <span class="dest-region" data-i18n="destinations.fergana.region">Farg'ona vodiysi</span>
           <h3 data-i18n="destinations.fergana.title">Farg'ona vodiysi</h3>
-          <p data-i18n="destinations.fergana.desc">Hunarmandchilik shaharchalari, ipakchilik korxonalari va bog'lar.</p>
+          <p data-i18n="destinations.fergana.desc">Hunarmandchilik shaharchalari, ipakchilik korxonalari va bog'lar. Farg'ona vodiysi sayohati — milliy hunarmandchilik va an'analar bilan tanishish uchun ideal yo'nalish.</p>
           <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $80</div>
           <button type="button" class="btn btn-accent book-btn" data-tour="Fergana Valley" data-price="$80">
             <span data-i18n="destinations.book">Bron qilish</span>
@@ -227,7 +398,7 @@
         <div class="dest-card-body">
           <span class="dest-region" data-i18n="destinations.termez.region">Surxondaryo</span>
           <h3 data-i18n="destinations.termez.title">Termiz</h3>
-          <p data-i18n="destinations.termez.desc">Buddaviylik yodgorliklari va qadimiy Baqtriya izlari.</p>
+          <p data-i18n="destinations.termez.desc">Buddaviylik yodgorliklari va qadimiy Baqtriya izlari. Surxondaryoga tur — tarixga qiziquvchilar uchun kam o'rganilgan, ammo boy meros diyori.</p>
           <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $70</div>
           <button type="button" class="btn btn-accent book-btn" data-tour="Termez" data-price="$70">
             <span data-i18n="destinations.book">Bron qilish</span>
@@ -239,7 +410,7 @@
         <div class="dest-card-body">
           <span class="dest-region" data-i18n="destinations.chimgan.region">Toshkent viloyati</span>
           <h3 data-i18n="destinations.chimgan.title">Chimgan–Chorvoq</h3>
-          <p data-i18n="destinations.chimgan.desc">Tog'lar, kanatli yo'l va zumrad rangli suv omborining manzarasi.</p>
+          <p data-i18n="destinations.chimgan.desc">Tog'lar, kanatli yo'l va zumrad rangli suv omborining manzarasi. Chimgan-Chorvoqqa bir kunlik safar — Toshkentdan eng yaqin tog' dam olish maskani.</p>
           <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $45</div>
           <button type="button" class="btn btn-accent book-btn" data-tour="Chimgan-Charvak" data-price="$45">
             <span data-i18n="destinations.book">Bron qilish</span>
@@ -251,7 +422,7 @@
         <div class="dest-card-body">
           <span class="dest-region" data-i18n="destinations.samarkand.region">Samarqand–Buxoro</span>
           <h3 data-i18n="destinations.samarkand.title">Samarqand–Buxoro</h3>
-          <p data-i18n="destinations.samarkand.desc">Registon maydoni, Amir Temur maqbarasi va qadimiy Buxoro ko'chalari.</p>
+          <p data-i18n="destinations.samarkand.desc">Registon maydoni, Amir Temur maqbarasi va qadimiy Buxoro ko'chalari. Samarqanddan Buxoroga tur narxi va marshruti haqida Safo Travel'dan bepul konsultatsiya oling.</p>
           <div class="dest-price"><span data-i18n="destinations.priceFrom">dan</span> $120</div>
           <button type="button" class="btn btn-accent book-btn" data-tour="Samarkand-Bukhara" data-price="$120">
             <span data-i18n="destinations.book">Bron qilish</span>
@@ -449,7 +620,7 @@
     </div>
     <div class="about-grid">
       <figure class="about-cert glass-card">
-        <img src="assets/images/certificate.png" alt="Davlat ro'yxatidan o'tganlik guvohnomasi" loading="lazy" />
+        <img src="assets/images/muslima-ziyo-guvohnomasi.webp" alt="&quot;Muslima Ziyo&quot; XK davlat ro'yxatidan o'tganlik guvohnomasi (STIR 300 611 497)" loading="lazy" width="632" height="896" />
         <figcaption data-i18n="about.certCaption">Davlat ro'yxatidan o'tganlik guvohnomasi</figcaption>
       </figure>
       <div class="about-content glass-card">
@@ -459,7 +630,7 @@
           <li><span data-i18n="about.labelTaxId">STIR</span><strong>300 611 497</strong></li>
           <li><span data-i18n="about.labelLegalForm">Tashkiliy-huquqiy shakli</span><strong data-i18n="about.valueLegalForm">Xususiy korxona</strong></li>
           <li><span data-i18n="about.labelAddress">Manzil</span><strong data-i18n="about.addressValue">Navoiy viloyati, Navoiy shahri, Me'mor MFY, Me'morlar ko'chasi, 16-G uy</strong></li>
-          <li><span data-i18n="about.labelDirector">Rahbar</span><strong>Разжаловать Ш.Х</strong></li>
+          <li><span data-i18n="about.labelDirector">Rahbar</span><strong>Radjabov Sh.X</strong></li>
           <li><span data-i18n="about.labelPhone">Telefon</span><strong><a href="tel:+998773690009">+998 77 369 00 09</a>, <a href="tel:+998906183614">+998 90 618 36 14</a></strong></li>
         </ul>
         <a class="about-map-link" href="https://www.google.com/maps?q=40.115944,65.376194" target="_blank" rel="noopener" data-i18n="about.labelMap">Xaritada ko'rish</a>
@@ -507,7 +678,7 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <a href="#hero" class="logo">
-        <img class="logo-icon" src="assets/images/logo-icon.png" width="62" height="25" alt="" aria-hidden="true">
+        <img class="logo-icon" src="assets/images/safo-travel-logotipi.webp" width="62" height="25" alt="" aria-hidden="true">
         <span class="logo-text">Safo Travel</span>
       </a>
       <p data-i18n="footer.tagline">O'zbekiston bo'ylab unutilmas sayohatlar.</p>

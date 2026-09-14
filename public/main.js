@@ -1,6 +1,9 @@
 // ===================== i18n dictionary =====================
 const dict = {
   uz: {
+    'meta.title': "Safo Travel — Travel Agency",
+    'meta.description': "Safo Travel — a travel agency offering domestic tours across Uzbekistan: Chimgan-Charvak, Samarkand-Bukhara, Khiva, Fergana Valley, Termez and Tashkent.",
+
     'nav.tours': "Turlar",
     'nav.services': "Xizmatlar",
     'nav.destinations': "Yo'nalishlar",
@@ -41,22 +44,22 @@ const dict = {
     'destinations.book': "Bron qilish",
     'destinations.khiva.region': "Xorazm",
     'destinations.khiva.title': "Xiva",
-    'destinations.khiva.desc': "Ichan-Qal'a — ochiq osmon ostidagi muzey-shahar, minglab yillik tarix.",
+    'destinations.khiva.desc': "Ichan-Qal'a — ochiq osmon ostidagi muzey-shahar, minglab yillik tarix. Xorazmdagi bu qadimiy shaharga sayohat — mustaqil sayyohlar orasida eng ko'p so'raladigan yo'nalishlardan biri.",
     'destinations.tashkent.region': "Toshkent",
     'destinations.tashkent.title': "Toshkent",
-    'destinations.tashkent.desc': "Zamonaviy poytaxt, metro stansiyalari, milliy taomlar va bozorlar.",
+    'destinations.tashkent.desc': "Zamonaviy poytaxt, metro stansiyalari, milliy taomlar va bozorlar. Toshkent bo'ylab bir kunlik ekskursiya qisqa muddatli dam olish uchun qulay tanlov.",
     'destinations.fergana.region': "Farg'ona vodiysi",
     'destinations.fergana.title': "Farg'ona vodiysi",
-    'destinations.fergana.desc': "Hunarmandchilik shaharchalari, ipakchilik korxonalari va bog'lar.",
+    'destinations.fergana.desc': "Hunarmandchilik shaharchalari, ipakchilik korxonalari va bog'lar. Farg'ona vodiysi sayohati — milliy hunarmandchilik va an'analar bilan tanishish uchun ideal yo'nalish.",
     'destinations.termez.region': "Surxondaryo",
     'destinations.termez.title': "Termiz",
-    'destinations.termez.desc': "Buddaviylik yodgorliklari va qadimiy Baqtriya izlari.",
+    'destinations.termez.desc': "Buddaviylik yodgorliklari va qadimiy Baqtriya izlari. Surxondaryoga tur — tarixga qiziquvchilar uchun kam o'rganilgan, ammo boy meros diyori.",
     'destinations.chimgan.region': "Toshkent viloyati",
     'destinations.chimgan.title': "Chimgan–Chorvoq",
-    'destinations.chimgan.desc': "Tog'lar, kanatli yo'l va zumrad rangli suv omborining manzarasi.",
+    'destinations.chimgan.desc': "Tog'lar, kanatli yo'l va zumrad rangli suv omborining manzarasi. Chimgan-Chorvoqqa bir kunlik safar — Toshkentdan eng yaqin tog' dam olish maskani.",
     'destinations.samarkand.region': "Samarqand–Buxoro",
     'destinations.samarkand.title': "Samarqand–Buxoro",
-    'destinations.samarkand.desc': "Registon maydoni, Amir Temur maqbarasi va qadimiy Buxoro ko'chalari.",
+    'destinations.samarkand.desc': "Registon maydoni, Amir Temur maqbarasi va qadimiy Buxoro ko'chalari. Samarqanddan Buxoroga tur narxi va marshruti haqida Safo Travel'dan bepul konsultatsiya oling.",
 
     'soon.badge': "Tez orada",
     'soon.title': "Yana ko'proq yo'nalishlar",
@@ -166,6 +169,9 @@ const dict = {
   },
 
   ru: {
+    'meta.title': "Safo Travel — туристическое агентство",
+    'meta.description': "Safo Travel — туристическое агентство, организующее туры по Узбекистану: Чимган-Чарвак, Самарканд-Бухара, Хива, Ферганская долина, Термез и Ташкент.",
+
     'nav.tours': "Туры",
     'nav.services': "Услуги",
     'nav.destinations': "Направления",
@@ -206,22 +212,22 @@ const dict = {
     'destinations.book': "Забронировать",
     'destinations.khiva.region': "Хорезм",
     'destinations.khiva.title': "Хива",
-    'destinations.khiva.desc': "Ичан-Кала — город-музей под открытым небом с тысячелетней историей.",
+    'destinations.khiva.desc': "Ичан-Кала — город-музей под открытым небом с тысячелетней историей. Поездка в этот древний город Хорезма — одно из самых популярных направлений среди самостоятельных туристов.",
     'destinations.tashkent.region': "Ташкент",
     'destinations.tashkent.title': "Ташкент",
-    'destinations.tashkent.desc': "Современная столица, станции метро, национальная кухня и базары.",
+    'destinations.tashkent.desc': "Современная столица, станции метро, национальная кухня и базары. Однодневная экскурсия по Ташкенту — удобный вариант для короткого отдыха.",
     'destinations.fergana.region': "Ферганская долина",
     'destinations.fergana.title': "Ферганская долина",
-    'destinations.fergana.desc': "Ремесленные городки, шёлковые фабрики и сады.",
+    'destinations.fergana.desc': "Ремесленные городки, шёлковые фабрики и сады. Поездка в Ферганскую долину — отличный способ познакомиться с народными промыслами и традициями.",
     'destinations.termez.region': "Сурхандарья",
     'destinations.termez.title': "Термез",
-    'destinations.termez.desc': "Буддийские памятники и следы древней Бактрии.",
+    'destinations.termez.desc': "Буддийские памятники и следы древней Бактрии. Тур в Сурхандарью — малоизученное, но богатое наследием направление для любителей истории.",
     'destinations.chimgan.region': "Ташкентская область",
     'destinations.chimgan.title': "Чимган–Чарвак",
-    'destinations.chimgan.desc': "Горы, канатная дорога и вид на изумрудное водохранилище.",
+    'destinations.chimgan.desc': "Горы, канатная дорога и вид на изумрудное водохранилище. Однодневная поездка в Чимган–Чарвак — ближайший горный курорт от Ташкента.",
     'destinations.samarkand.region': "Самарканд–Бухара",
     'destinations.samarkand.title': "Самарканд–Бухара",
-    'destinations.samarkand.desc': "Регистан, мавзолей Амира Темура и древние улицы Бухары.",
+    'destinations.samarkand.desc': "Регистан, мавзолей Амира Темура и древние улицы Бухары. Узнайте у Safo Travel цену и маршрут тура из Самарканда в Бухару — бесплатная консультация.",
 
     'soon.badge': "Скоро",
     'soon.title': "Ещё больше направлений",
@@ -331,6 +337,9 @@ const dict = {
   },
 
   en: {
+    'meta.title': "Safo Travel — Travel Agency",
+    'meta.description': "Safo Travel — a travel agency offering domestic tours across Uzbekistan: Chimgan-Charvak, Samarkand-Bukhara, Khiva, Fergana Valley, Termez and Tashkent.",
+
     'nav.tours': "Tours",
     'nav.services': "Services",
     'nav.destinations': "Destinations",
@@ -371,22 +380,22 @@ const dict = {
     'destinations.book': "Book now",
     'destinations.khiva.region': "Khorezm",
     'destinations.khiva.title': "Khiva",
-    'destinations.khiva.desc': "Itchan Kala — an open-air museum city with thousands of years of history.",
+    'destinations.khiva.desc': "Itchan Kala — an open-air museum city with thousands of years of history. A trip to this ancient Khorezm city is one of the most searched-for routes among independent travelers.",
     'destinations.tashkent.region': "Tashkent",
     'destinations.tashkent.title': "Tashkent",
-    'destinations.tashkent.desc': "The modern capital — metro stations, national cuisine and bazaars.",
+    'destinations.tashkent.desc': "The modern capital — metro stations, national cuisine and bazaars. A one-day Tashkent city tour is a convenient choice for a short getaway.",
     'destinations.fergana.region': "Fergana Valley",
     'destinations.fergana.title': "Fergana Valley",
-    'destinations.fergana.desc': "Craft towns, silk-weaving workshops and gardens.",
+    'destinations.fergana.desc': "Craft towns, silk-weaving workshops and gardens. A trip to the Fergana Valley is a great way to experience Uzbekistan's traditional crafts and customs.",
     'destinations.termez.region': "Surkhandarya",
     'destinations.termez.title': "Termez",
-    'destinations.termez.desc': "Buddhist monuments and traces of ancient Bactria.",
+    'destinations.termez.desc': "Buddhist monuments and traces of ancient Bactria. A Surkhandarya tour is an under-visited but history-rich destination for culture travelers.",
     'destinations.chimgan.region': "Tashkent region",
     'destinations.chimgan.title': "Chimgan–Charvak",
-    'destinations.chimgan.desc': "Mountains, a gondola ride, and views over a turquoise reservoir.",
+    'destinations.chimgan.desc': "Mountains, a gondola ride, and views over a turquoise reservoir. A one-day Chimgan–Charvak trip is the closest mountain getaway from Tashkent.",
     'destinations.samarkand.region': "Samarkand–Bukhara",
     'destinations.samarkand.title': "Samarkand–Bukhara",
-    'destinations.samarkand.desc': "Registan Square, the mausoleum of Amir Temur, and the ancient streets of Bukhara.",
+    'destinations.samarkand.desc': "Registan Square, the mausoleum of Amir Temur, and the ancient streets of Bukhara. Ask Safo Travel for the price and route of a Samarkand-to-Bukhara tour — free consultation.",
 
     'soon.badge': "Coming soon",
     'soon.title': "More destinations",
@@ -518,6 +527,14 @@ function applyLanguage(lang) {
       el.textContent = dict[currentLang][key];
     }
   });
+
+  if (dict[currentLang]['meta.title']) {
+    document.title = dict[currentLang]['meta.title'];
+  }
+  const metaDescriptionEl = document.querySelector('meta[name="description"]');
+  if (metaDescriptionEl && dict[currentLang]['meta.description']) {
+    metaDescriptionEl.setAttribute('content', dict[currentLang]['meta.description']);
+  }
 
   document.querySelectorAll('[data-i18n-ph]').forEach((el) => {
     const key = el.getAttribute('data-i18n-ph');
